@@ -1,0 +1,12 @@
+name: Hello World
+on: push
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Say Hello
+        run: echo "Hello from GitHub Actions"
+      - name: Step 2 - Show current date
+        run: date
+      - name: Step 3 - List project files
+        run: ls -la
