@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Print a secret (for demo)
-        run: 'echo "Deploying with key: ${{secrets:VERCEL_TOKEN}}"'
+        run: 'echo "Deploying with key: ${{secrets.VERCEL_TOKEN}}"'
         env:
-          VERCEL_TOKEN: "${{secrets: VERCEL_TOKEN}}"
+          VERCEL_TOKEN: ${{secrets.VERCEL_TOKEN}}
