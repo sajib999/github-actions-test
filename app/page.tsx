@@ -6,7 +6,7 @@ export default function Home() {
           <h1>
             Welcome <span>Github actions</span>
           </h1>
-          <p>First Work</p>
+          <p>checking Next.js Cache</p>
         </div>
       </main>
     </div>
