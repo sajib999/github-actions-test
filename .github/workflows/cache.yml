@@ -35,3 +35,18 @@ jobs:
 
       - name: Build App
         run: npm run build
+      # Cache Next.js
+      - name: Cache Next.js build
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-next-${{ hashFiles('**/*.js') }}
+          restore-keys: ${{ runner.os }}-next-
+      # Check Next.js cache status
+      - name: Check Next.js cache result
+        run: |
+          if [ "${{ steps.cache-next.outputs.cache-hit }}" = "true" ]; then
+            echo "✅ Next.js cache hit! Build reused."
+          else
+            echo "⚠️ Next.js cache miss! Building from scratch."
+          fi
