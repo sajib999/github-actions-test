@@ -4,27 +4,27 @@ on:
     branches: [main]
   pull_request:
     branch: [main]
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        # Step 1: Checkout code from repo
-        - name: Checkout code
-          uses: actions/checkout@v4
-        # Step 2: Setup Node.js version
-        - name: Use Node.js
-          uses: actions/setup-node@v4
-          with:
-            node-version: "20"
-        # Step 3: Install dependencies (using clean install)
-        - name: Install dependencies
-          run: npm ci
-        # Step 4: Run linter (If defined in packing.json)
-        - name: Lint code
-          run: npm run lint
-        # Step 5: Run tests
-        # - name: Run tests
-        #   run: npm test
-        # Step 6: Build the project (for React/Next.js)
-        - name: Build project
-          run: npm run build
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout code from repo
+      - name: Checkout code
+        uses: actions/checkout@v4
+      # Step 2: Setup Node.js version
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      # Step 3: Install dependencies (using clean install)
+      - name: Install dependencies
+        run: npm ci
+      # Step 4: Run linter (If defined in packing.json)
+      - name: Lint code
+        run: npm run lint
+      # Step 5: Run tests
+      # - name: Run tests
+      #   run: npm test
+      # Step 6: Build the project (for React/Next.js)
+      - name: Build project
+        run: npm run build
