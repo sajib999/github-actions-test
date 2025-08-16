@@ -7,6 +7,14 @@ export default function Home() {
             Welcome <span>Github actions</span>
           </h1>
           <p>Deploy to Vercel by: i_ahmed</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+            commodi alias, dolore ad molestiae reprehenderit! Nobis voluptatum
+            necessitatibus sint fugiat nulla aut eius distinctio iure? Soluta
+            hic provident officiis distinctio assumenda eaque tempore accusamus
+            labore! Temporibus itaque voluptatum tempore quibusdam voluptate
+            placeat culpa minima.
+          </p>
         </div>
       </main>
     </div>
