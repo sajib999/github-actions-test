@@ -6,7 +6,7 @@ export default function Home() {
           <h1>
             Welcome <span>Github actions</span>
           </h1>
-          <p>checking Next.js Cache</p>
+          <p>Deploy to Vercel by: i_ahmed</p>
         </div>
       </main>
     </div>
