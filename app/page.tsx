@@ -7,6 +7,7 @@ export default function Home() {
             Welcome <span>Github actions</span>
           </h1>
           <p>Deploy to Vercel by: i_ahmed</p>
+          <h1 className='text-3xl text-cyan-700 py-4'>The more the merrier</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
             commodi alias, dolore ad molestiae reprehenderit! Nobis voluptatum
